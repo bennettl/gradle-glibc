@@ -35,7 +35,4 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
         "$ALPINE_GLIBC_BIN_PACKAGE_FILENAME" \
         "$ALPINE_GLIBC_I18N_PACKAGE_FILENAME"
 
-RUN wget https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -O /usr/local/bin/docker-compose && \
-    chmod +x /usr/local/bin/docker-compose 
-
 ENV LANG=C.UTF-8
